@@ -1,0 +1,79 @@
+@import "./_var.scss";
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contentBlock {
+    width: calc(100% - 40px);
+    max-width: $maxWidth;
+    padding: 20px;
+    display: flex;
+
+    .halfContent {
+        width: 50%;
+
+        @include s900 {
+            width: 100%;
+        }
+
+        &.centerContent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 !important;
+        }
+    }
+
+    .leftContent {
+        margin-left: 50px;
+
+        @include s900 {
+            margin-left: 0;
+        }
+    }
+
+    .rightContent {
+        margin-right: 50px;
+
+        @include s900 {
+            margin-right: 0;
+        }
+    }
+}
+
+.tintColored {
+    color: $tintColor;
+    text-decoration: underline;
+}
+
+.button {
+    background-color: $tintColor;
+    border-radius: 10px;
+    padding: 15px 10px;
+
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+        background-color: $tintColor2;
+    }
+}

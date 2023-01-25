@@ -1,0 +1,26 @@
+{
+  "name": "kleeschulte-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./sass:./assets/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliasPeeters/kleeschulte-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EliasPeeters/kleeschulte-landing-page/issues"
+  },
+  "homepage": "https://github.com/EliasPeeters/kleeschulte-landing-page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

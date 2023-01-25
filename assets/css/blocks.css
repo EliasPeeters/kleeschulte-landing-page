@@ -1,0 +1,76 @@
+#startBlock {
+  display: flex;
+  flex-direction: row;
+  min-height: 400px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+@media (max-width: 900px) {
+  #startBlock {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  #startBlock {
+    margin-top: 0;
+  }
+}
+#startBlock .leftContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+@media (max-width: 900px) {
+  #startBlock .leftContent {
+    margin-left: 0;
+  }
+}
+#startBlock .leftContent h1 {
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  #startBlock .leftContent h1 {
+    font-size: 50px;
+  }
+}
+#startBlock .leftContent p {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  #startBlock .leftContent p {
+    width: 100%;
+  }
+}
+#startBlock .leftContent .button {
+  width: 150px;
+  margin-top: 30px;
+}
+@media (max-width: 500px) {
+  #startBlock .leftContent .button {
+    width: 100%;
+  }
+}
+#startBlock .rightContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#startBlock .rightContent img {
+  height: 100%;
+  max-height: 500px;
+}
+@media (max-width: 500px) {
+  #startBlock .rightContent img {
+    width: 80%;
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=blocks.css.map */
