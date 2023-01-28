@@ -1,6 +1,7 @@
 $backgroundColor: rgb(248, 246, 224);
 $tintColor: rgb(246, 203, 69);
 $tintColor2: rgb(208, 169, 60);
+$lightYellow: #FBEAB270;
 $superLightYellow: rgb(248, 246, 234);
 
 $maxWidth: 1200px;
@@ -13,6 +14,12 @@ $maxWidth: 1200px;
 
 @mixin s600 {
     @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin s700 {
+    @media (max-width: 700px) {
         @content;
     }
 }

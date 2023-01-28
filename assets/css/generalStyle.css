@@ -10,6 +10,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 300px;
 }
 
 .contentBlock {
@@ -47,6 +48,26 @@ body {
 @media (max-width: 900px) {
   .contentBlock .rightContent {
     margin-right: 0;
+  }
+}
+.contentBlock.twoSidedContent {
+  flex-direction: row;
+}
+@media (max-width: 900px) {
+  .contentBlock.twoSidedContent {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+.contentBlock.universalPadding {
+  padding: 50px;
+  width: calc(100% - 100px);
+}
+@media (max-width: 900px) {
+  .contentBlock.universalPadding {
+    padding: 20px;
+    width: calc(100% - 40px);
   }
 }
 

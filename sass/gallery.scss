@@ -1,22 +1,16 @@
 @import "./_var.scss";
 
 #gallery {
-    padding: 50px;
-    width: calc(100% - 100px);
-
-    @include s500 {
-        padding: 20px;
-        width: calc(100% - 40px);
-    }
 
     #galleryBox {
         background-color: $superLightYellow;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        border-radius: 20px;
+        border-radius: 30px;
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
         padding-top: 20px;
+        align-items: center;
 
         @include s600 {
             flex-direction: column;
@@ -25,7 +19,7 @@
         .galleryLine {
             background-color: $tintColor;
             width: 3px;
-            height: auto;
+            height: 50%;
         }
 
         .galleryItem {
