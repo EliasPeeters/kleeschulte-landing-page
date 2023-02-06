@@ -18,7 +18,6 @@ body {
 .contentBlock {
     width: calc(100% - 40px);
     max-width: $maxWidth;
-    padding: 20px;
     display: flex;
 
     .halfContent {
@@ -64,8 +63,8 @@ body {
     }
 
     &.universalPadding {
-        padding: 50px;
-        width: calc(100% - 100px);
+        padding: 25px;
+        //width: calc(100% - 100px);
 
         @include s900 {
             padding: 20px;

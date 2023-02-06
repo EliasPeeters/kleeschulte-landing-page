@@ -16,7 +16,6 @@ body {
 .contentBlock {
   width: calc(100% - 40px);
   max-width: 1200px;
-  padding: 20px;
   display: flex;
 }
 .contentBlock .halfContent {
@@ -61,8 +60,7 @@ body {
   }
 }
 .contentBlock.universalPadding {
-  padding: 50px;
-  width: calc(100% - 100px);
+  padding: 25px;
 }
 @media (max-width: 900px) {
   .contentBlock.universalPadding {

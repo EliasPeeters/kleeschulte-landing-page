@@ -24,9 +24,13 @@
     .textWrapper {
         margin-left: 20px;
         width: 100%;
+        display: flex;
+        align-items: center;
 
         h3 {
             margin: 0;
+            font-size: 20px;
+            font-weight: normal;
         }
 
         p {
