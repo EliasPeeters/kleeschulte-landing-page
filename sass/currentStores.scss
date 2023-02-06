@@ -7,12 +7,12 @@
 
 
 .currentStores {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 20px;
+    width: calc(100% + 20px);
+    display: flex;
+    margin-left: -20px;
 
     .currentStore {
+        margin-left: 20px;
         width: 100%;
         height: 150px;
         display: flex;
