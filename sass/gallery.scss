@@ -1,16 +1,17 @@
 @import "./_var.scss";
 
 #gallery {
+    background-color: $superLightYellow;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 30px;
 
     #galleryBox {
-        background-color: $superLightYellow;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        border-radius: 30px;
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
         padding-top: 20px;
         align-items: center;
+        transition: 300ms;
 
         @include s600 {
             flex-direction: column;
@@ -54,6 +55,16 @@
                 font-size: 12px;
             }
         }
+    }
 
+    .line {
+        width: calc(100% - 50px);
+        margin-left: 25px;
+        height: 1px;
+        background-color: $tintColor;
+    }
+
+    .more_text {
+        padding: 50px;
     }
 }

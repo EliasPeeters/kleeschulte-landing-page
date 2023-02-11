@@ -1,5 +1,4 @@
 .recipeGallery {
-  height: 300px;
   width: 100%;
 }
 .recipeGallery .textWrapper {
@@ -18,6 +17,9 @@
   text-align: center;
   font-size: 1em;
   max-width: 300px;
+}
+.recipeGallery .textWrapper button {
+  width: 300px;
 }
 .recipeGallery .backgroundShape {
   height: 200px;
@@ -63,6 +65,7 @@
   text-align: center;
   font-weight: bold;
   margin-top: 20px;
+  margin-bottom: 80px;
   font-size: 1.5em;
   padding: 5px;
 }
@@ -72,6 +75,8 @@
 .recipeGallery .galleryItemWrapper .galleryItem button {
   width: calc(100% - 40px);
   margin: 0 20px 20px;
+  position: absolute;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=recipeGallery.css.map */

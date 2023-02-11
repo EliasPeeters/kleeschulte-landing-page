@@ -1,12 +1,15 @@
-#gallery #galleryBox {
+#gallery {
   background-color: rgb(248, 246, 234);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
+}
+#gallery #galleryBox {
   display: flex;
   flex-direction: row;
   padding-bottom: 20px;
   padding-top: 20px;
   align-items: center;
+  transition: 300ms;
 }
 @media (max-width: 600px) {
   #gallery #galleryBox {
@@ -45,6 +48,15 @@
 #gallery #galleryBox .galleryItem button {
   width: 50%;
   font-size: 12px;
+}
+#gallery .line {
+  width: calc(100% - 50px);
+  margin-left: 25px;
+  height: 1px;
+  background-color: rgb(246, 203, 69);
+}
+#gallery .more_text {
+  padding: 50px;
 }
 
 /*# sourceMappingURL=gallery.css.map */

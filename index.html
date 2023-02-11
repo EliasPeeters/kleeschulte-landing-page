@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/recipeGallery.css">
     <link rel="stylesheet" href="assets/css/currentStores.css">
     <link rel="stylesheet" href="assets/css/recipeModal.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,15 +28,16 @@
             <h3 id="recipe_heading">Gemüsespaghetti mit Petersilien-Pesto</h3>
             <div id="content">
                 <img id="recipe_image" src="assets/img/Gemüsespaghetti.png">
-                <div id="recipe_ingredients">
-                    <ul id="recipe_ingredients_ul">
-                        <li>125g glatte Petersilie</li>
-                        <li>1 Knoblauchzehe</li>
-                        <li>60g geriebener Parmesan</li>
-                    </ul>
+                <div id="modal_rightSide">
+                    <div id="recipe_ingredients">
+                        <ul id="recipe_ingredients_ul">
+                            <li>125g glatte Petersilie</li>
+                            <li>1 Knoblauchzehe</li>
+                            <li>60g geriebener Parmesan</li>
+                        </ul>
+                    </div>
                     <button class="button">Download</button>
                 </div>
-
             </div>
         </div>
     </div>
@@ -44,78 +46,139 @@
         <div id="navBarContent">
             <img id="navBarLogo" src="assets/img/logo.png" alt="Logo">
             <div id="navBarLinks">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a id="home">Home</a>
+                <a id="nav_about">About</a>
+                <a id="nav_variations">Variations</a>
+                <a id="nav_contact">Contact</a>
             </div>
         </div>
     </div>
 
+    <script>
+        let navLogo = document.getElementById('navBarLogo');
+        let navBar = document.getElementById('navBar');
+        window.addEventListener('scroll' , function () {
+            let window_top = this.scrollY;
+            if (window_top == 0) {
+                navLogo.style.height = '150px';
+                navBar.style.height = '150px';
+            } else {
+                navLogo.style.height = 150 - window_top + 'px';
+                navBar.style.height = 150 - window_top + 'px';
+            }
+        });
+    </script>
+
     <div id="nav_spacer"></div>
 
-    <div class="contentBlock twoSidedContent" id="startBlock" style="background-image: url('assets/img/Rezepte_mit_rapsoel_mit Flasche cmyk.png')">
+    <div class="contentBlock twoSidedContent" id="startBlock">
         <div class="content">
-            <h1>Für Geschmacksliebhaber... <br> natürlich <span class="tintColored"><img src="assets/img/moritz-signet-logo.png"></span></h1>
-            <p>Natürliche Produkte sorgsam zu verarbeiten ist seit jeher die Grundlage unserer Arbeit. Den Tugenden unserer westfälischen Heimat - Zuverlässigkeit und Qualität - fühlen wir uns als Familie seit Generationen verpflichtet. So ist Qualität kein Zufall sonder verlässliche Prämisse. <br> <br> Bernd Kleeschulte, Geschäftsführer</p>
-
+            <h1>Experience <span class="tintColored"><img src="assets/img/moritz-signet-logo.png"></span><br>non-refined native coldpressed rape seed oil </h1>
+            <p>Carefully processing natural products has always been the basis of our work. As a family, we have been committed to the virtues of our Westphalian homeland - reliability and quality - for generations. So quality is not a coincidence but a reliable premise.<br> <br> Bernd Kleeschulte, Managing Director</p>
 <!--            <button class="button">Learn more</button>-->
         </div>
 
     </div>
 
+
     <div class="contentBlock universalPadding">
         <div class="blockWithImage">
-            <div class="textWrapper">
-                <h3>Kleeschulte GmbH und Co. KG</h3>
-                <p>Founded in 1934</p>
-                <p>The main focus has always been on quality and personal customer relations</p>
-                <p>Today, the company is managed by Bernd Kleeschulte in the third generation.</p>
+            <div class="textWrapper width70">
+                <h3>What makes <img src="assets/img/moritz-signet-logo.png"> the best oil</h3>
+                <Ul>
+                    <li>All natural and coldpressed oils</li>
+                    <li>Low-saturated fatty acids</li>
+                    <li>High content in mono-unsaturated fatty acids</li>
+                    <li>Positive realtion of omega 3 & omega 6</li>
+                    <li>High occurance of vitamin E protects cells from oxidative damage</li>
+                    <li>Mulitple function for hot & cold kitchen</li>
+                    <li>Mild, seedy, nutty and delicious</li>
+                </Ul>
 
             </div>
 
-            <img src="assets/img/Kleeschulte-in-Bueren-Agrarhandel-Pellethandel-Speiseoele.jpg">
+            <img class="width30" src="assets/img/Rapsfeld_IMG_1725.jpg">
         </div>
     </div>
 
-    <div class="contentBlock universalPadding" id="gallery">
+    <div class="contentBlock universalPadding">
+        <div class="blockWithImage" id="about">
+            <div class="textWrapper">
+                <h3>Kleeschulte <br> Moritz Premium Speiseöle</h3>
+                <p>The main focus has always been on quality and personal customer relations since the foundation in 1934</p>
+            </div>
+
+            <img id="productionImages" src="assets/img/Rapsfeld_IMG_1725.jpg">
+        </div>
+    </div>
+
+    <div class="contentBlock universalPadding" id="variations">
+        <div  id="gallery" >
             <div id="galleryBox">
-                <div class="galleryItem">
-                    <img src="assets/img/Moritz_Bio_Rapsîl.tif" alt="rapsöl">
-                    <h3>Rapsöl</h3>
-                    <p>Lorem ipsum dolor sit amet, conesctetur adipiscing elit.</p>
-                    <button class="button">Open</button>
-                </div>
-                <div class="galleryLine"></div>
-                <div class="galleryItem">
-                    <img src="assets/img/Moritz_Sonnenblumenîl.tif" alt="rapsöl">
-                    <h3>Sonnenblumenöl</h3>
-                    <p>Lorem ipsum dolor sit amet, conesctetur adipiscing elit.</p>
-                    <button class="button">Open</button>
-                </div>
-                <div class="galleryLine"></div>
                 <div class="galleryItem">
                     <img src="assets/img/Moritz_Classic_Rapsîl.tif" alt="rapsöl">
                     <h3>Rapsöl</h3>
                     <p>Lorem ipsum dolor sit amet, conesctetur adipiscing elit.</p>
                     <button class="button">Open</button>
                 </div>
+                <div class="galleryLine"></div>
+                <div class="galleryItem">
+                    <img src="assets/img/Moritz_Bio_Rapsîl.tif" alt="rapsöl">
+                    <h3>Sonnenblumenöl</h3>
+                    <p>Lorem ipsum dolor sit amet, conesctetur adipiscing elit.</p>
+                    <button class="button">Open</button>
+                </div>
+                <div class="galleryLine"></div>
+                <div class="galleryItem">
+                    <img src="assets/img/Moritz_Sonnenblumenîl.tif" alt="rapsöl">
+                    <h3>Rapsöl</h3>
+                    <p>Lorem ipsum dolor sit amet, conesctetur adipiscing elit.</p>
+                    <button class="button">Open</button>
+                </div>
             </div>
+<!--            <div class="line"></div>-->
+<!--            <p class="more_text">Carefully processing natural products has always been the basis of our work. As a family, we have been committed to the virtues of our Westphalian homeland - reliability and quality - for generations. So quality is not a coincidence but a reliable premise.<br> <br> Bernd Kleeschulte, Managing Director</p>-->
+        </div>
+
+    </div>
+
+    <div class="contentBlock universalPadding">
+        <div>
+            <h3 class="currentStoresHeading">A selection of our distribution channels in Germany</h3>
+            <div class="currentStores">
+
+                <div class="currentStore">
+                    <img src="assets/img/1200px-Logo_Edeka.svg.png">
+                </div>
+
+                <div class="currentStore" style="cursor: pointer" onclick="window.open('https://www.amazon.de/-/en/Moritz-Rapeseed-Seed-Cold-Pressed/dp/B08PW438YZ/ref=sr_1_1?crid=7PXZBE0KP56Z&keywords=moritz+öl+kleeschulte&qid=1675889778&sprefix=moritz+öl+kleeschulte%2Caps%2C189&sr=8-1')">
+                    <img src="assets/img/Amazon_logo.svg.png">
+                </div>
+                <div class="currentStore">
+                    <img src="assets/img/rewe.png">
+                </div>
+
+
+
+                <div class="currentStore">
+                    <img src="assets/img/aldi-proveedores.png">
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <div class="contentBlock universalPadding twoSidedContent">
-        <div class="leftContent halfContent centerContent">
-            <img src="assets/img/logo.png">
-        </div>
 
         <div class="rightContent halfContent">
-            <h1>Lorem ipsum dolor sit amit</h1>
+            <h1>German quality promises</h1>
 
             <div class="bulletPoint">
                 <div class="imageWrapper">
                     <img src="assets/img/bio.png" alt="bio">
                 </div>
                 <div class="textWrapper">
-                    <h3>BIO nach EG-Öko-Verordnung </h3>
+                    <h3>BIO according to EC Organic Regulation</h3>
                 </div>
             </div>
 
@@ -124,7 +187,7 @@
                     <img src="assets/img/ohne_gentechni_org_log_2015.png" alt="bio">
                 </div>
                 <div class="textWrapper">
-                    <h3>Ohne Gentechnik</h3>
+                    <h3>Without GMO</h3>
                 </div>
             </div>
 
@@ -136,77 +199,70 @@
                     <h3>IFS Food</h3>
                 </div>
             </div>
+
+            <div class="bulletPoint">
+                <div class="imageWrapper">
+                    <img src="assets/img/gfrs.png" alt="bio">
+                </div>
+                <div class="textWrapper">
+                    <h3>GFRS</h3>
+                </div>
+            </div>
+
+            <div class="bulletPoint">
+                <div class="imageWrapper" style="padding: 0; height: 70px; max-width: 70px;">
+                    <img src="assets/img/logo_fsa_kl_rgb.png" alt="bio" style="border-radius: 100%">
+                </div>
+                <div class="textWrapper">
+                    <h3>GMP+ FSA</h3>
+                </div>
+            </div>
+
+            <div class="bulletPoint">
+                <div class="imageWrapper" style="padding: 0; height: 70px; max-width: 70px;">
+                    <img src="assets/img/redcert.jpg" alt="bio" style="border-radius: 100%">
+                </div>
+                <div class="textWrapper">
+                    <h3>REDCERT EU</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="leftContent halfContent centerContent">
+            <img class="halfContent_image" src="assets/img/bottles.png">
         </div>
     </div>
 
-    <div class="contentBlock universalPadding">
-        <div class="blockWithImage">
-            <div class="textWrapper width70">
-                <h3>What makes <img src="assets/img/moritz-signet-logo.png"> the best oil</h3>
-                <p>- All natural and coldpressed oils</p>
-                <p>- Low-saturated fatty acids</p>
-                <p>- High content in mono-unsaturated fatty acids</p>
-                <p>- Positive realtion of omega 3 & omega 6</p>
-                <p>- High occurance of vitamin E protects cells from oxidative damage</p>
-                <p>- Mulitple function for hot & cold kitchen</p>
-                <p>- Mild, seedy, nutty and delicious</p>
-            </div>
-
-            <img class="width30" src="assets/img/Kleeschulte%20Bernd%20in%20ôlmÅhle%20-%20Presse.jpg">
-        </div>
-    </div>
 
     <div class="contentBlock universalPadding">
-        <div>
-            <h3 class="currentStoresHeading">Our distribution channels in Germany</h3>
-            <div class="currentStores">
-                <div class="currentStore">
-                    <img src="assets/img/aldi-proveedores.png">
-                </div>
-                <div class="currentStore">
-                    <img src="assets/img/rewe.png">
-                </div>
-                <div class="currentStore">
-                    <img src="assets/img/Amazon_logo.svg.png">
-                </div>
-
-                <div class="currentStore">
-                    <img src="assets/img/1200px-Logo_Edeka.svg.png">
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="contentBlock universalPadding">
-        <div class="recipeGallery">
-            <div class="textWrapper">
-                <h3>Lorem Ipsum <span class="tintColored">Moritz</span> sit amit</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa metus, cursus eu pellentesque non.</p>
-            </div>
+        <div class="recipeGallery" id="reciepes">
+<!--            <div class="textWrapper">-->
+<!--                <h3>Lorem Ipsum <span class="tintColored">Moritz</span> sit amit</h3>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa metus, cursus eu pellentesque non.</p>-->
+<!--            </div>-->
 
             <div class="galleryItemWrapper">
                 <div class="galleryItem">
                     <img src="assets/img/Gemüsespaghetti.png">
-                    <h4>Gemüsespaghetti mit Petersilien-Pesto</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa metus, cursus eu pellentesque non.</p>
+                    <h4>Vegetable spaghetti with parsley pesto</h4>
                     <button id="recipe_spagehetti" class="button">Open</button>
                 </div>
                 <div class="galleryItem">
                     <img src="assets/img/rucolaSalat.png">
-                    <h4>Kartoffelsalat mit Tomaten und Rucola</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa metus, cursus eu pellentesque non.</p>
+                    <h4>Potato salad with tomatoes and arugula</h4>
                     <button id="recipe_rucola" class="button">Open</button>
                 </div>
                 <div class="galleryItem">
-                    <img src="assets/img/Kleeschulte%20Bernd%20in%20ôlmÅhle%20-%20Presse.jpg">
-                    <h4>Lorem Ipsum dolor</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa metus, cursus eu pellentesque non.</p>
+                    <img src="assets/img/lachs.png">
+                    <h4>Marinated potatoes with smoked salmon trout</h4>
+                    <button id="recipe_lachs" class="button">Open</button>
+
                 </div>
                 <div class="galleryItem">
-                    <img src="assets/img/Kleeschulte%20Bernd%20in%20ôlmÅhle%20-%20Presse.jpg">
-                    <h4>Lorem Ipsum dolor</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa metus, cursus eu pellentesque non.</p>
+                    <img src="assets/img/toertchen.png">
+                    <h4>Apple tartlet with vanilla cream</h4>
+                    <button id="recipe_toertchen" class="button">Open</button>
+
                 </div>
 
             </div>
@@ -216,7 +272,25 @@
 
     </div>
 
+    <div class="contentBlock universalPadding">
+        <div class="recipeGallery">
+            <div class="textWrapper">
+                <h3>Get in contact</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa metus, cursus eu pellentesque non.</p>
+
+                <button class="button" onclick="window.location = 'mailto:export@kleeschulte.de'">Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentBlock universalPadding" id="footer">
+        <div class="line"></div>
+        <p>Kleeschulte GmbH & Co. KG, Bennenberg 6, 33142 Büren</p>
+    </div>
+
     <script src="assets/js/modalFunctionality.js"></script>
+    <script src="assets/js/imageSwitcher.js"></script>
+    <script src="assets/js/navBar.js"></script>
 
 </body>
 </html>
