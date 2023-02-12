@@ -1,0 +1,14 @@
+#footer {
+  width: 100%;
+  display: block !important;
+}
+#footer .line {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(246, 203, 69);
+}
+#footer p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=footer.css.map */
