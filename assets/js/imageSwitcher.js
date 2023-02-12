@@ -31,10 +31,10 @@ class ImageSwitcher {
     }
 }
 
-new ImageSwitcher('startBlock', [
-    'assets/img/Rezepte_mit_rapsoel_mit Flasche cmyk.png',
-    'assets/img/Kleeschulte-in-Bueren-Agrarhandel-Pellethandel-Speiseoele.jpg',
-], true)
+// new ImageSwitcher('startBlock', [
+//     'assets/img/Rezepte_mit_rapsoel_mit Flasche cmyk.png',
+//     'assets/img/Kleeschulte-in-Bueren-Agrarhandel-Pellethandel-Speiseoele.jpg',
+// ], true)
 
 new ImageSwitcher('productionImages', [
     'assets/img/DSC01017.JPG',

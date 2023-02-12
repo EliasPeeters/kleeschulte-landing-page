@@ -1,0 +1,36 @@
+@import "./_var.scss";
+
+.tableWrapper {
+    background-color: $superLightYellow;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    width: calc(100% - 60px);
+    padding: 30px;
+    font-size: 20px;
+
+    table {
+        border-collapse: separate;
+        border-spacing: 2em;
+    }
+
+    .first_row {
+        width: 20%;
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    .normal_row {
+        width: 40%;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .image_row {
+        img {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            height: 300px;
+            object-fit: contain;
+        }
+    }
+}
