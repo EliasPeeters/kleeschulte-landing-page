@@ -77,19 +77,6 @@
 .blockWithImage .textWrapper li:hover {
   color: rgb(246, 203, 69);
 }
-.blockWithImage .textWrapper li::before {
-  content: "";
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("assets/img/logo.png");
-  margin-right: 5px;
-  margin-top: 5px;
-  position: relative;
-  top: 6px;
-}
 .blockWithImage img {
   width: calc(60% + 60px);
   height: 100%;

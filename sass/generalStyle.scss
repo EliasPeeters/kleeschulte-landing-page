@@ -102,3 +102,9 @@ body {
         background-color: $tintColor2;
     }
 }
+
+.centerVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

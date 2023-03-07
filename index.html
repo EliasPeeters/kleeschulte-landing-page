@@ -20,6 +20,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .blockWithImage li::before {
+            content: '';
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('assets/img/logo.png');
+            margin-right: 5px;
+            margin-top: 5px;
+            position: relative;
+            top: 6px;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -96,7 +113,7 @@
         <div class="blockWithImage">
             <div class="textWrapper width70">
                 <h3>What makes <img src="assets/img/moritz-signet-logo.png"> the best oil</h3>
-                <Ul>
+                <ul>
                     <li>All natural and coldpressed oils</li>
                     <li>Low-saturated fatty acids</li>
                     <li>High content in mono-unsaturated fatty acids</li>
@@ -104,7 +121,7 @@
                     <li>High occurance of vitamin E protects cells from oxidative damage</li>
                     <li>Mulitple function for hot & cold kitchen</li>
                     <li>Mild, seedy, nutty and delicious</li>
-                </Ul>
+                </ul>
             </div>
 
             <img class="width30" src="assets/img/Rapsfeld_IMG_1725.jpg">
@@ -154,7 +171,7 @@
 
     <div class="contentBlock universalPadding twoSidedContent">
 
-        <div class="rightContent halfContent">
+        <div class="rightContent halfContent centerVertical">
             <h1>German quality promises</h1>
 
             <div class="bulletPoint">
@@ -181,33 +198,6 @@
                 </div>
                 <div class="textWrapper">
                     <h3>IFS Food</h3>
-                </div>
-            </div>
-
-            <div class="bulletPoint">
-                <div class="imageWrapper">
-                    <img src="assets/img/gfrs.png" alt="bio">
-                </div>
-                <div class="textWrapper">
-                    <h3>GFRS</h3>
-                </div>
-            </div>
-
-            <div class="bulletPoint">
-                <div class="imageWrapper" style="padding: 0; height: 70px; max-width: 70px;">
-                    <img src="assets/img/logo_fsa_kl_rgb.png" alt="bio" style="border-radius: 100%">
-                </div>
-                <div class="textWrapper">
-                    <h3>GMP+ FSA</h3>
-                </div>
-            </div>
-
-            <div class="bulletPoint">
-                <div class="imageWrapper" style="padding: 0; height: 70px; max-width: 70px;">
-                    <img src="assets/img/redcert.jpg" alt="bio" style="border-radius: 100%">
-                </div>
-                <div class="textWrapper">
-                    <h3>REDCERT EU</h3>
                 </div>
             </div>
 
@@ -277,8 +267,6 @@
                 <div class="currentStore">
                     <img src="assets/img/rewe.png">
                 </div>
-
-
 
                 <div class="currentStore">
                     <img src="assets/img/aldi-proveedores.png">

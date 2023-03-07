@@ -85,20 +85,6 @@
                 color: $tintColor;
             }
         }
-
-        li::before {
-            content: '';
-            display: inline-block;
-            height: 30px;
-            width: 30px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url('assets/img/logo.png');
-            margin-right: 5px;
-            margin-top: 5px;
-            position: relative;
-            top: 6px;
-        }
     }
 
     img {

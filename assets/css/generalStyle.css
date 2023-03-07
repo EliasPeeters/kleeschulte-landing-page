@@ -94,4 +94,10 @@ body {
   background-color: rgb(208, 169, 60);
 }
 
+.centerVertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=generalStyle.css.map */
