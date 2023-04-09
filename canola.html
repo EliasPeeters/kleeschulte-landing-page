@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moritz</title>
+    <link rel="stylesheet" href="assets/css/navBar.css">
+    <link rel="stylesheet" href="assets/css/generalStyle.css">
+    <link rel="stylesheet" href="assets/css/startBlock.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/bulletPoints.css">
+    <link rel="stylesheet" href="assets/css/blockWithImage.css">
+    <link rel="stylesheet" href="assets/css/recipeGallery.css">
+    <link rel="stylesheet" href="assets/css/currentStores.css">
+    <link rel="stylesheet" href="assets/css/recipeModal.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/storyLine.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .blockWithImage li::before {
+            content: '';
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('assets/img/logo.png');
+            margin-right: 5px;
+            margin-top: 5px;
+            position: relative;
+            top: 6px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="recipeModalWrapper">
+        <div id="blackBox"></div>
+        <div id="recipeModal">
+            <div id="recipe_close">X</div>
+            <h3 id="recipe_heading">Gemüsespaghetti mit Petersilien-Pesto</h3>
+            <div id="content">
+                <img id="recipe_image" src="assets/img/Gemüsespaghetti.png">
+                <div id="modal_rightSide">
+                    <div id="recipe_ingredients">
+                        <ul id="recipe_ingredients_ul">
+                            <li>125g glatte Petersilie</li>
+                            <li>1 Knoblauchzehe</li>
+                            <li>60g geriebener Parmesan</li>
+                        </ul>
+                    </div>
+                    <button class="button">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="navBar">
+        <div id="navBarContent">
+            <img id="navBarLogo" src="assets/img/logo.png" alt="Logo">
+            <div id="navBarLinks">
+                <a id="home">Test</a>
+                <a id="nav_about">About</a>
+                <a id="nav_variations">Variations</a>
+                <a id="nav_contact">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let navLogo = document.getElementById('navBarLogo');
+        let navBar = document.getElementById('navBar');
+        window.addEventListener('scroll' , function () {
+            let window_top = this.scrollY;
+            if (window_top == 0) {
+                navLogo.style.height = '150px';
+                navBar.style.height = '150px';
+            } else {
+                navLogo.style.height = 150 - window_top + 'px';
+                navBar.style.height = 150 - window_top + 'px';
+            }
+        });
+    </script>
+
+    <div id="nav_spacer"></div>
+
+    <div class="contentBlock twoSidedContent" id="startBlock" style="background-image: url('assets/img/Rezepte_mit_rapsoel_mit Flasche cmyk.png')">
+        <div class="content" id="startBlockText">
+            <h1>Experience <span class="tintColored"><img src="assets/img/moritz-signet-logo.png"></span><br>Non-Refined Native Coldpressed Rape Seed Oil </h1>
+            <p>Carefully processing natural products has always been the basis of our work. As a family, we have been committed to the virtues of our Westphalian homeland - reliability and quality - for generations. So quality is not a coincidence but a reliable premise.<br> <br> Bernd Kleeschulte, Managing Director</p>
+<!--            <button class="button">Learn more</button>-->
+        </div>
+    </div>
+
+    <div class="contentBlock universalPadding story">
+        <p class="storyText">Our Non-Refined Native Coldpressed Oils are produced in a gentle cold pressing process without additives, completely natural</p>
+        <div class="arrow-down"></div>
+        <p class="storyText">The way of the rapeseed leads over a 3-course cleaning, into the oil mill.</p>
+        <div class="arrow-down"></div>
+        <p class="storyText">The golden-yellow Rapeseed Oil is obtained from the seeds in a gentle coldpressing process.</p>
+        <div class="arrow-down"></div>
+        <p class="storyText">The filters are precisely tuned to achieve the desired purity of Moritz Premium Edible Oils. Additives have no place in our edible kernel oil.</p>
+    </div>
+
+
+    <div class="contentBlock universalPadding">
+        <div class="blockWithImage">
+            <div class="textWrapper width70">
+                <h3>What makes <img src="assets/img/moritz-signet-logo.png"> the best oil</h3>
+                <ul>
+                    <li>All natural and coldpressed oils</li>
+                    <li>Low-saturated fatty acids</li>
+                    <li>High content in mono-unsaturated fatty acids</li>
+                    <li>Positive realtion of omega 3 & omega 6</li>
+                    <li>High occurance of vitamin E protects cells from oxidative damage</li>
+                    <li>Mulitple function for hot & cold kitchen</li>
+                    <li>Mild, seedy, nutty and delicious</li>
+                </ul>
+            </div>
+
+            <img class="width30" src="assets/img/Rapsfeld_IMG_1725.jpg">
+        </div>
+    </div>
+
+    <div class="contentBlock universalPadding">
+        <div class="tableWrapper">
+            <table>
+                <tr>
+                    <td class="first_row"></td>
+                    <td class="normal_row image_row"><img src="assets/img/bottles.png"></td>
+                    <td class="normal_row image_row"><img src="assets/img/normaloil.png"></td>
+                </tr>
+
+                <tr>
+                    <td class="first_row">Color</td>
+                    <td class="normal_row">beautiful natural golden yellow color,
+                        the colorants (including lutein) are valuable antioxidants at the same time.
+                    </td>
+                    <td class="normal_row">colorless, the natural colorants are largely removed by the refining process</td>
+                </tr>
+
+                <tr>
+                    <td class="first_row">Taste</td>
+                    <td class="normal_row">full fine nutty taste of the rapeseed/ Canola Plant</td>
+                    <td class="normal_row">flavorless</td>
+                </tr>
+                <tr>
+                    <td class="first_row">Ingredients</td>
+                    <td class="normal_row">high content of natural vitamin E, lutein and other valuable bio-substances</td>
+                    <td class="normal_row">natural vitamin E is lost during refining. Lutein and the other biochemicals are largely removed by refining.</td>
+                </tr>
+                <tr>
+                    <td class="first_row">Chemical treatment</td>
+                    <td class="normal_row">non</td>
+                    <td class="normal_row">high solvent consumption for refining</td>
+                </tr>
+                <tr>
+                    <td class="first_row">Energy consumption</td>
+                    <td class="normal_row">relatively low energy consumption for cold pressing</td>
+                    <td class="normal_row">high energy input</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="contentBlock universalPadding twoSidedContent">
+
+        <div class="rightContent halfContent centerVertical">
+            <h1>German quality promises</h1>
+
+            <div class="bulletPoint">
+                <div class="imageWrapper">
+                    <img src="assets/img/bio.png" alt="bio">
+                </div>
+                <div class="textWrapper">
+                    <h3>BIO according to EC Organic Regulation</h3>
+                </div>
+            </div>
+
+            <div class="bulletPoint">
+                <div class="imageWrapper">
+                    <img src="assets/img/ohne_gentechni_org_log_2015.png" alt="bio">
+                </div>
+                <div class="textWrapper">
+                    <h3>Without GMO</h3>
+                </div>
+            </div>
+
+            <div class="bulletPoint">
+                <div class="imageWrapper" style="padding: 0; height: 70px; max-width: 70px;">
+                    <img src="assets/img/IFS-Food.png" alt="bio">
+                </div>
+                <div class="textWrapper">
+                    <h3>IFS Food</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="leftContent halfContent centerContent">
+            <img class="halfContent_image" src="assets/img/bottles.png">
+        </div>
+    </div>
+
+    <div class="contentBlock universalPadding" id="variations">
+        <div  id="gallery" >
+            <div id="galleryBox">
+                <div class="galleryItem">
+                    <img src="assets/img/Moritz_Classic_Rapsîl.png" alt="rapsöl">
+                    <h3>Moritz rapeseed oil Canola</h3>
+                    <p>The original</p>
+                    <button class="button" id="bottle1">Open</button>
+                </div>
+                <div class="galleryLine"></div>
+                <div class="galleryItem">
+                    <img src="assets/img/Moritz_Bio_Rapsîl.png" alt="rapsöl">
+                    <h3>Moritz Rapeseed Oil Organic Canola</h3>
+                    <p>The organic one</p>
+                    <button class="button" id="bottle2">Open</button>
+                </div>
+                <div class="galleryLine"></div>
+                <div class="galleryItem">
+                    <img src="assets/img/Moritz_Sonnenblumenîl.png" alt="rapsöl">
+                    <h3>Moritz Sunflower Oil</h3>
+                    <p>From the sun, for our customers</p>
+                    <button class="button" id="bottle3">Open</button>
+                </div>
+            </div>
+            <div id="more_text_content" style="display: none">
+                <div class="line" id="more_text_line"></div>
+                <h4 id="more_text_heading">Moritz rapeseed oil Canola</h4>
+                <p class="more_text" id="more_text">Carefully processing natural products has always been the basis of our work. As a family, we have been committed to the virtues of our Westphalian homeland - reliability and quality - for generations. So quality is not a coincidence but a reliable premise.<br> <br> Bernd Kleeschulte, Managing Director</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="contentBlock universalPadding">
+        <div class="blockWithImage" id="about">
+            <div class="textWrapper">
+                <h3>Kleeschulte <br> Moritz Premium Edible Oils</h3>
+                <p>The main focus has always been on quality and personal customer relations since the foundation in 1934</p>
+            </div>
+
+            <img id="productionImages" src="assets/img/Rapsfeld_IMG_1725.jpg">
+        </div>
+    </div>
+
+    <div class="contentBlock universalPadding">
+        <div>
+            <h3 class="currentStoresHeading">A selection of our distribution channels in Germany</h3>
+            <div class="currentStores">
+
+                <div class="currentStore">
+                    <img src="assets/img/1200px-Logo_Edeka.svg.png">
+                </div>
+
+                <div class="currentStore" style="cursor: pointer" onclick="window.open('https://www.amazon.de/-/en/Moritz-Rapeseed-Seed-Cold-Pressed/dp/B08PW438YZ/ref=sr_1_1?crid=7PXZBE0KP56Z&keywords=moritz+öl+kleeschulte&qid=1675889778&sprefix=moritz+öl+kleeschulte%2Caps%2C189&sr=8-1')">
+                    <img src="assets/img/Amazon_logo.svg.png">
+                </div>
+                <div class="currentStore">
+                    <img src="assets/img/rewe.png">
+                </div>
+
+                <div class="currentStore">
+                    <img src="assets/img/aldi-proveedores.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="contentBlock universalPadding">
+        <div class="recipeGallery" id="reciepes">
+<!--            <div class="textWrapper">-->
+<!--                <h3>Lorem Ipsum <span class="tintColored">Moritz</span> sit amit</h3>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa metus, cursus eu pellentesque non.</p>-->
+<!--            </div>-->
+
+            <div class="galleryItemWrapper">
+                <div class="galleryItem">
+                    <img src="assets/img/Gemüsespaghetti.png">
+                    <h4>Vegetable spaghetti with parsley pesto</h4>
+                    <button id="recipe_spagehetti" class="button">Open</button>
+                </div>
+                <div class="galleryItem">
+                    <img src="assets/img/rucolaSalat.png">
+                    <h4>Potato salad with tomatoes and arugula</h4>
+                    <button id="recipe_rucola" class="button">Open</button>
+                </div>
+                <div class="galleryItem">
+                    <img src="assets/img/lachs.png">
+                    <h4>Marinated potatoes with smoked salmon trout</h4>
+                    <button id="recipe_lachs" class="button">Open</button>
+
+                </div>
+                <div class="galleryItem">
+                    <img src="assets/img/toertchen.png">
+                    <h4>Apple tartlet with vanilla cream</h4>
+                    <button id="recipe_toertchen" class="button">Open</button>
+
+                </div>
+
+            </div>
+            <div class="backgroundShape"></div>
+        </div>
+
+
+    </div>
+
+    <div class="contentBlock universalPadding">
+        <div class="recipeGallery">
+            <div class="textWrapper">
+                <h3 style="margin-bottom: 20px">Get in contact</h3>
+                <button class="button" onclick="window.location = 'mailto:export@kleeschulte.de'">Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentBlock universalPadding" id="footer">
+        <div class="line"></div>
+        <p>Kleeschulte GmbH & Co. KG, Bennenberg 6, 33142 Büren</p>
+    </div>
+
+    <script src="assets/js/modalFunctionality.js"></script>
+    <script src="assets/js/imageSwitcher.js"></script>
+    <script src="assets/js/navBar.js"></script>
+    <script src="assets/js/startBlockSwitcher.js"></script>
+    <script src="assets/js/bottlesTexts.js"></script>
+
+</body>
+</html>
