@@ -68,7 +68,7 @@ body {
 @media (max-width: 900px) {
   .contentBlock.universalPadding {
     padding: 20px;
-    width: calc(100% - 40px);
+    width: calc(100% - 40px) !important;
   }
 }
 
@@ -98,6 +98,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .centerVerticalMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.f18 {
+  font-size: 18px !important;
+}
+
+@media (max-width: 900px) {
+  .hideMobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=generalStyle.css.map */
