@@ -20,6 +20,8 @@
         justify-content: space-between;
         align-items: center;
 
+
+
         #navBarLogo {
             height: 150px;
             min-height: 80px;
@@ -41,17 +43,6 @@
                 color: black;
                 text-decoration: none;
 
-                @include s900 {
-                    background-color: $tintColor;
-                    color: white;
-                    margin-bottom: 5px;
-                    border-radius: 20px;
-                    padding: 5px;
-
-                    &:hover {
-                        color: $tintColor;
-                    }
-                }
 
                 &:hover {
                     color: $tintColor;
