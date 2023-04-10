@@ -48,6 +48,12 @@
                     color: $tintColor;
                 }
 
+                @include s900 {
+                    &:hover {
+                        color: black;
+                    }
+                }
+
                 &.active {
                     color: black;
                 }

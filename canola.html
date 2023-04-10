@@ -79,6 +79,10 @@
         let navLogo = document.getElementById('navBarLogo');
         let navBar = document.getElementById('navBar');
         let navBarLinks = document.getElementById('navBarLinks');
+
+        navLogo.addEventListener('click', function () {
+            window.scrollTo(0, 0);
+        });
         window.addEventListener('scroll' , function () {
             let window_top = this.scrollY;
             if (window_top === 0) {

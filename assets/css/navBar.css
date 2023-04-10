@@ -42,6 +42,11 @@
 #navBar #navBarContent #navBarLinks a:hover {
   color: rgb(246, 203, 69);
 }
+@media (max-width: 900px) {
+  #navBar #navBarContent #navBarLinks a:hover {
+    color: black;
+  }
+}
 #navBar #navBarContent #navBarLinks a.active {
   color: black;
 }
