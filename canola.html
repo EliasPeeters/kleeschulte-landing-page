@@ -24,6 +24,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <style>
+        .blockWithImage li {
+            position: relative;
+            padding-left: 40px; /* die Breite des Icons plus den rechten Abstand */
+            width: calc(100% - 40px);
+        }
         .blockWithImage li::before {
             content: '';
             display: inline-block;
@@ -32,10 +37,10 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-image: url('assets/img/logo.png');
+            position: absolute;
+            top: 0;
+            left: 0;
             margin-right: 5px;
-            margin-top: 5px;
-            position: relative;
-            top: 6px;
         }
 
     </style>
@@ -100,7 +105,7 @@
     <div class="contentBlock universalPadding twoSidedContent">
 
         <div class="rightContent halfContent centerVertical">
-            <h1 style="font-size: 35px">Why use a new innovative Kleeschulte/ Moritz non-refined native cold-pressed rapeseed/ sunflowerseed kernel oil from Germany?</h1>
+            <h1 style="font-size: 35px">Why Use A New Innovative Kleeschulte/ Moritz Non-Refined Native Cold-Pressed Rapeseed/ Sunflowerseed Kernel Oil From Germany?</h1>
 <!--            <h1 style="font-size: 35px">WHY USE A NEW INNOVATIVE KLEESCHULTE/ MORITZ NON-REFINED NATIVE COLD-PRESSED RAPESEED/ SUNFLOWERSEED KERNEL OIL FROM GERMANY?</h1>-->
 
         </div>
@@ -124,7 +129,9 @@
 
     <div class="contentBlock universalPadding">
         <div class="blockWithImage">
-            <img class="width30" style="max-height: 400px; object-fit: contain" src="assets/img/DLG.png">
+            <div class="center">
+                <img class="width30" style="max-height: 300px; object-fit: contain" src="assets/img/DLG.png">
+            </div>
 
             <div class="textWrapper width70">
                 <h3>Our <img src="assets/img/moritz-signet-logo.png"> Premium</h3>
@@ -152,8 +159,8 @@
             <img class="width30 topImage" style="margin-left: 0" src="assets/img/Kleeschulte-in-Bueren-Agrarhandel-Pellethandel-Speiseoele.jpg">
 
             <div class="textWrapper width70">
-                <h3>Did you know?</h3>
-                <p class="f18">The health benefits of our rapeseed oils: The exemplary fatty acid composition of our rapeseed oils supports a balanced diet. Our rapeseed oil is always a good choice because it is GMO-FREE, cold-pressed and native, and rich in cholesterol-lowering linoleic acid. Just one tablespoon covers the daily requirement of the important "protective vitamin E".</p>
+                <h3>Do you know?</h3>
+                <p class="f18">The health benefits of our rapeseed oils: The exemplary fatty acid composition of our rapeseed oils supports a balanced diet. Our rapeseed oil is always a good choice because it is GMO-FREE, Cold-Pressed and Native, and rich in cholesterol-lowering linoleic acid. Just one tablespoon covers the daily requirement of the important "protective vitamin E".</p>
             </div>
         </div>
     </div>
@@ -164,9 +171,9 @@
                 <h3>COLD PRESSED
                     = HIGH CONTENT OF NATURAL PROTECTIVE SUBSTANCES</h3>
                 <p class="f18">Mother Nature has equipped the rapeseed with a number of protective factors, which also protect the cold-pressed rapeseed oil made from it from oxidative processes and thus from spoilage.</p>
-                <p class="f18">Canola oil is usually a good choice. It contains a lot of the essential unsaturated omega-3 fatty acid "alpha-linolenic acid" as well as vitamin E. Rapeseed oil has the lowest proportion of saturated fatty acids and a high proportion of monounsaturated fatty acids. Of course, the favorable ratio of omega-3 to omega-6 fatty acids in rapeseed oil is also worth mentioning.</p>
+                <p class="f18">Canola Oil is usually a good choice. It contains a lot of the essential unsaturated omega-3 fatty acid "alpha-linolenic acid" as well as vitamin E. Rapeseed oil has the lowest proportion of saturated fatty acids and a high proportion of monounsaturated fatty acids. Of course, the favorable ratio of omega-3 to omega-6 fatty acids in rapeseed oil is also worth mentioning.</p>
                 <p class="f18">The oil obtained from the bright yellow flowering rapeseed is recommended by more and more nutritionists as a very good and valuable oil for everyday cooking.</p>
-                <p class="f18">The cold-pressed rapeseed oil is characterized by its balanced fatty acid composition and a fine, nutty and particularly mild taste. After pressing, rapeseed oil is simply filtered and rightly deserves the attribute "native" (= "natural").</p>
+                <p class="f18">The Cold-Pressed Rapeseed Oil is characterized by its balanced fatty acid composition and a fine, nutty and particularly mild taste. After pressing, rapeseed oil is simply filtered and rightly deserves the attribute "Native" (= "natural").</p>
             </div>
 
             <img class="width30" src="assets/img/DSC01017.JPG">
@@ -175,6 +182,7 @@
 
     <div class="contentBlock universalPadding hideMobile">
         <div class="tableWrapper">
+            <h3>Native and Cold Pressed Oil vs. Refined Oil</h3>
             <table>
                 <tr>
                     <td class="first_row"></td>
@@ -209,6 +217,11 @@
                     <td class="first_row">Energy consumption</td>
                     <td class="normal_row">relatively low energy consumption for cold pressing</td>
                     <td class="normal_row">high energy input</td>
+                </tr>
+                <tr>
+                    <td class="first_row">Possibilities of use</td>
+                    <td class="normal_row">In contrast to many other vegetable oils, high-quality cold-pressed rapeseed oil can be used for roasting, frying or baking. Particularly recommended in cold dishes for salads, dips, mayonnaise, etc. Application up to 170°C mild frying possible.</td>
+                    <td class="normal_row">No restrictions</td>
                 </tr>
             </table>
         </div>
