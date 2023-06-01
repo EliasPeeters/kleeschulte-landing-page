@@ -1,5 +1,5 @@
 #footer {
-  width: 100%;
+  width: calc(100% - 50px);
   display: block !important;
 }
 #footer .line {

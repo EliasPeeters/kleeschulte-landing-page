@@ -23,6 +23,7 @@
     }
 
     #recipeModal {
+        overflow-x: scroll;
         position: fixed;
         z-index: 101;
         width: 90%;
@@ -71,6 +72,11 @@
             #modal_rightSide {
                 width: calc(50% - 20px);
                 margin-left: 10px;
+
+                @include s600 {
+                    margin-left: 0;
+                    width: 100%;
+                }
             }
 
             #recipe_ingredients {
@@ -85,7 +91,7 @@
                 overflow-x: hidden;
 
                 @include s600 {
-                    width: 100%;
+                    width: calc(100% - 40px);
                     height: auto;
                 }
 
@@ -108,10 +114,6 @@
 
             .button {
                 width: 100%;
-
-                @include s600 {
-                    margin-left: -40px;
-                }
             }
 
             #recipe_image {

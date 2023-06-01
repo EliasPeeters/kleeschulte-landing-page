@@ -19,6 +19,7 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 #recipeModalWrapper #recipeModal {
+  overflow-x: scroll;
   position: fixed;
   z-index: 101;
   width: 90%;
@@ -68,6 +69,12 @@
   width: calc(50% - 20px);
   margin-left: 10px;
 }
+@media (max-width: 600px) {
+  #recipeModalWrapper #recipeModal #content #modal_rightSide {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 #recipeModalWrapper #recipeModal #content #recipe_ingredients {
   height: calc(100% - 120px);
   margin-bottom: 20px;
@@ -81,7 +88,7 @@
 }
 @media (max-width: 600px) {
   #recipeModalWrapper #recipeModal #content #recipe_ingredients {
-    width: 100%;
+    width: calc(100% - 40px);
     height: auto;
   }
 }
@@ -100,11 +107,6 @@
 }
 #recipeModalWrapper #recipeModal #content .button {
   width: 100%;
-}
-@media (max-width: 600px) {
-  #recipeModalWrapper #recipeModal #content .button {
-    margin-left: -40px;
-  }
 }
 #recipeModalWrapper #recipeModal #content #recipe_image {
   width: 50%;
